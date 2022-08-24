@@ -16,11 +16,11 @@ void binary_tree_delete(binary_tree_t *tree)
 	current = tree;
 	while (current != NULL)
 	{
-		//check for a leaf node
+		/*check for a leaf node*/
 		if (current->left == NULL && current->right == NULL)
 		{
 			parent = current->parent;
-			if ( parent != NULL)
+			if (parent != NULL)
 			{
 				/*
 				 * reset left-child or right-child
