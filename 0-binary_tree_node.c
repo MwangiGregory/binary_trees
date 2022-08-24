@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * binary_tree_node - creates a binary tree node
- * 
+ *
  * @parent: Pointer to the parent node
  * @value: Integer to be stored in the created node
  *
@@ -11,9 +11,10 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new = NULL;
+
 	new = malloc(1 * sizeof(binary_tree_t));
 	if (new == NULL)
-		return NULL;
+		return (NULL);
 
 	new->n = value;
 	new->left = NULL;
@@ -34,8 +35,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 		else
 		{
 			free(new);
-			return NULL;
+			return (NULL);
 		}
 	}
-	return new;
+	return (new);
 }
